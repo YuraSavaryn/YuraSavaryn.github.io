@@ -1,0 +1,334 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 30px;
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.page-header {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: black;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-logo {
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-logo img {
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    filter: brightness(1.5) contrast(1.2);
+}
+
+.main-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-logo a:hover {
+    color: #f04e30;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f04e30;
+}
+
+.auth button {
+    background-color: #f04e30;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth button:hover {
+    background-color: #c03d26;
+}
+
+.btn-primary button {
+    background-color: #f04e30;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    border: none;
+}
+
+.bth-primary button:hover {
+    background-color: #c03d26;
+}
+
+.hero {
+    background-color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background: url("https://www.hackerleague.org/wp-content/uploads/2019/08/Junction_2015.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: ""; 
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 68.5%;
+    background-color: rgba(0, 0, 0, 0.75); 
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 0 1rem;
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid white;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.footer-column ul {
+    list-style: none;
+    color: white;
+}
+
+.footer-column ul li {
+    text-align: center;
+    margin: 12px 50px 0 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.features {
+    margin: 0 5rem;
+    padding: 1rem 0 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: dark; /* Синій колір заголовку як на фото */
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    nav {
+        padding-right: 10px;
+    }
+}
+
+/* Медіа-запит для мобільних пристроїв */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    
+    .main-logo {
+        flex: 1;
+        font-size: 16px;
+    }
+    
+    .main-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        order: 3; 
+    }
+    
+    nav {
+        flex-basis: 100%;
+        order: 4; /* Розташовуємо під логотипом і кнопкою */
+        display: none; /* Приховуємо за замовчуванням */
+    }
+    
+    nav.active {
+        display: block; /* Показуємо при активації */
+        margin-top: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .auth {
+        flex: 1;
+        text-align: right;
+        order: 2; /* Розташовуємо справа від логотипу */
+    }
+    
+    .auth button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    /* Показуємо тільки одну кнопку на малих екранах */
+    .auth button:first-child {
+        display: none;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ще менші екрани */
+@media (max-width: 480px) {
+    .main-logo a {
+        display: none; /* Приховуємо текст логотипу на дуже малих екранах */
+    }
+    
+    .auth button {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+    }
+}

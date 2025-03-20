@@ -1,0 +1,140 @@
+.detail-icon {
+    font-size: 1.2rem;
+}
+
+.hackathon-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.hackathon-card:hover {
+    transform: translateY(-5px);
+}
+
+.hackathon-img {
+    height: 180px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img-1 {
+    background: url("https://img.itch.zone/aW1hZ2UyL2phbS8xNjU2Ni8zODkwNDQ1LnBuZw==/original/6GWMDo.png");
+}
+
+.img-2 {
+    background: url("https://media.assettype.com/tnm%2Fimport%2Fsites%2Fdefault%2Ffiles%2Fbitcoin_blockchain_pixabay_09102021_1200-compressed-compressed.jpg?w=480&auto=format%2Ccompress&fit=max");
+}
+
+.img-3 {
+    background: url("https://www.shutterstock.com/image-photo/panorama-shot-frontend-developer-team-260nw-2294268357.jpg");
+}
+
+.img-4 {
+    background: url("https://img.freepik.com/premium-photo/ai-solutions-business-technology-generative-ai_145713-6737.jpg");
+}
+
+.hackathon-status {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.hackathon-content {
+    padding: 1.5rem;
+}
+
+.hackathon-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hackathon-content p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.hackathon-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.hackathon-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.hackathon-status.active {
+    background-color: #4caf50;
+}
+
+.upcoming {
+    background-color: #2196f3;
+}
+
+.enroll {
+    padding: 20px 0 0;
+}
+
+.competition-rules {
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    padding: 2rem 5rem 3rem;
+}
+
+.competition-rules h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.rules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.rule-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.rule-icon {
+    font-size: 2rem;
+    color: #f04e30;
+    flex-shrink: 0;
+}
+
+.rule-content h4 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.rule-content p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
