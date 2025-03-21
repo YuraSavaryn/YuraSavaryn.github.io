@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/rating.css">
+    <title>Рейтинг</title>
+</head>
+<body>
+    <header class="container">
+        <div class="main-logo">
+            <img src="https://images.vexels.com/media/users/3/137684/isolated/preview/4205608f4b2ad81262e9328efbe9d2ab-geometric-cube-abstract-logo.png">
+            <a href="index.html">HACK YOUR LIFE</a>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="competitions.html">Змагання</a></li>
+                <li><a href="projects.html">Мої проєкти</a></li>
+                <li><a href="rating.html">Рейтинг</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button>Увійти</button>
+            <button>Зареєструватися</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Рейтинг учасників</h1>
+            <p>Переглядайте рейтинг учасників на основі їхніх досягнень, кількості перемог та загальної активності.</p>
+        </div>
+
+        <div class="rating-control">
+            <div class="rating-filter">
+                <button class="active">Загальний рейтинг</button>
+                <button>За кількістю перемог</button>
+                <button>За активністю</button>
+                <button>Цьогорічні лідери</button>
+            </div>
+            <div class="rating-search">
+                <input type="text" placeholder="Пошук учасника...">
+                <button>Знайти</button>
+            </div>
+        </div>
+
+        <section class="rating">
+            <div class="rating-stats">
+                <div class="stat-item">
+                    <div class="stat-icon">👑</div>
+                    <div class="stat-content">
+                        <h4>Лідер рейтингу</h4>
+                        <p class="stat-name">Олексій Петренко</p>
+                        <p>Переможець 8 хакатонів</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-content">
+                        <h4>Всього змагань</h4>
+                        <p class="stat-number">136</p>
+                        <p>Проведено за цей рік</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👨‍💻</div>
+                    <div class="stat-content">
+                        <h4>Учасників</h4>
+                        <p class="stat-number">7,834</p>
+                        <p>Зареєстровано на платформі</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-content">
+                        <h4>Ваш рейтинг</h4>
+                        <p class="stat-number">236</p>
+                        <p>із 7,834 учасників</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rating-table-container">
+                <table class="rating-table">
+                    <thead>
+                        <tr>
+                            <th class="position-col">Місце</th>
+                            <th class="participant-col">Учасник</th>
+                            <th class="total-score-col">Загальний бал</th>
+                            <th class="victories-col">Перемоги</th>
+                            <th class="participations-col">Участь</th>
+                            <th class="activity-col">Активність</th>
+                            <th class="trend-col">Тренд</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="first-place">
+                            <td class="position-col">1</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">ОП</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Олексій Петренко</p>
+                                        <p class="participant-team">Team Innovators</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">6847</td>
+                            <td class="victories-col">8</td>
+                            <td class="participations-col">21</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 95%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-up">↑ 2</span></td>
+                        </tr>
+                        <tr class="second-place">
+                            <td class="position-col">2</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">МК</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Марія Коваленко</p>
+                                        <p class="participant-team">ByteBenders</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">6534</td>
+                            <td class="victories-col">7</td>
+                            <td class="participations-col">19</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 90%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-down">↓ 1</span></td>
+                        </tr>
+                        <tr class="third-place">
+                            <td class="position-col">3</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">ВС</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Василь Сидоренко</p>
+                                        <p class="participant-team">Code Warriors</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">6229</td>
+                            <td class="victories-col">6</td>
+                            <td class="participations-col">22</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 85%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-up">↑ 3</span></td>
+                        </tr>
+                        <tr>
+                            <td class="position-col">4</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">ІЗ</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Ірина Заєць</p>
+                                        <p class="participant-team">DevDreamers</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">5934</td>
+                            <td class="victories-col">5</td>
+                            <td class="participations-col">20</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 80%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-same">−</span></td>
+                        </tr>
+                        <tr>
+                            <td class="position-col">5</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">ОМ</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Олег Мельник</p>
+                                        <p class="participant-team">TechTitans</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">5742</td>
+                            <td class="victories-col">5</td>
+                            <td class="participations-col">18</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 78%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-up">↑ 1</span></td>
+                        </tr>
+                        <tr>
+                            <td class="position-col">6</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">ТК</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Тарас Ковальчук</p>
+                                        <p class="participant-team">Binary Beasts</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">5589</td>
+                            <td class="victories-col">4</td>
+                            <td class="participations-col">17</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 75%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-down">↓ 2</span></td>
+                        </tr>
+                        <tr>
+                            <td class="position-col">7</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">КТ</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Катерина Троценко</p>
+                                        <p class="participant-team">WebWizards</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">5382</td>
+                            <td class="victories-col">4</td>
+                            <td class="participations-col">16</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 72%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-up">↑ 5</span></td>
+                        </tr>
+                        <tr>
+                            <td class="position-col">8</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">ДП</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Дмитро Петров</p>
+                                        <p class="participant-team">HackMasters</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">5271</td>
+                            <td class="victories-col">3</td>
+                            <td class="participations-col">20</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 70%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-down">↓ 1</span></td>
+                        </tr>
+                        <tr>
+                            <td class="position-col">9</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">АП</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Аліна Приходько</p>
+                                        <p class="participant-team">CodeCrafters</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">5169</td>
+                            <td class="victories-col">3</td>
+                            <td class="participations-col">15</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 68%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-same">−</span></td>
+                        </tr>
+                        <tr>
+                            <td class="position-col">10</td>
+                            <td class="participant-col">
+                                <div class="participant-info">
+                                    <div class="participant-avatar">РМ</div>
+                                    <div class="participant-details">
+                                        <p class="participant-name">Роман Мельник</p>
+                                        <p class="participant-team">DataDragons</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="total-score-col">5043</td>
+                            <td class="victories-col">3</td>
+                            <td class="participations-col">14</td>
+                            <td class="activity-col">
+                                <div class="activity-bar">
+                                    <div class="activity-progress" style="width: 65%;"></div>
+                                </div>
+                            </td>
+                            <td class="trend-col"><span class="trend-up">↑ 2</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">4</button>
+                <button class="pagination-btn">5</button>
+                <span>...</span>
+                <button class="pagination-btn">78</button>
+                <button class="pagination-btn next">Наступна →</button>
+            </div>
+        </section>
+
+        <section class="rating-achievements">
+            <h2>Ваші досягнення</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥇</div>
+                    <h3>Перше місце</h3>
+                    <p>Хакатон AI Solutions 2024</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥈</div>
+                    <h3>Друге місце</h3>
+                    <p>Web Dev Challenge 2024</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥈</div>
+                    <h3>Друге місце</h3>
+                    <p>GameDev Challenge 2024</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Лідер за балами</h3>
+                    <p>Лютий 2025</p>
+                </div>
+                <div class="achievement-card locked">
+                    <div class="achievement-icon">⭐</div>
+                    <h3>Топ-100 розробників</h3>
+                    <p>Потрібно досягти топ-100</p>
+                </div>
+                <div class="achievement-card locked">
+                    <div class="achievement-icon">🔥</div>
+                    <h3>10 перемог</h3>
+                    <p>Виграйте 10 хакатонів</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>HackYourLife</h3>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Наша команда</a></li>
+                    <li><a href="#">Партнери</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Спільнота</h3>
+                <ul>
+                    <li><a href="#">Рейтинг</a></li>
+                    <li><a href="#">Форум</a></li>
+                    <li><a href="#">Успішні проєкти</a></li>
+                    <li><a href="#">Менторство</a></li>
+                    <li><a href="#">Вакансії</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Приєднуйтесь</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Контактна інформація</h3>
+                <ul>
+                    <li>Телефон</li>
+                    <li>+380 (098) 067 34 57</li>
+                    <li>Пошта</li>
+                    <li>yura.seruizno@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HackYourLife. Усі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

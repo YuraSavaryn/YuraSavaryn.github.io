@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hackatons</title>
+</head>
+<body>
+    <header class="container">
+        <div class="main-logo">
+            <img src="https://images.vexels.com/media/users/3/137684/isolated/preview/4205608f4b2ad81262e9328efbe9d2ab-geometric-cube-abstract-logo.png">
+            <a href="index.html">HACK YOUR LIFE</a>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="competitions.html">Змагання</a></li>
+                <li><a href="projects.html">Мої проєкти</a></li>
+                <li><a href="rating.html">Рейтинг</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button>Увійти</button>
+            <button>Зареєструватися</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Змагайтесь. Розвивайтесь. Перемагайте.</h1>
+                <p>HackYourLife - сучасна платформа для участі у віртуальних хакатонах та змаганнях з програмування. Розширюйте свої навички, приєднуйтесь до спільноти однодумців та отримуйте цінні призи.</p>
+                <div class="auth">
+                    <button>Приєднатись до змагання</button>
+                </div>
+            </div>
+        </div>
+        
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Наші переваги</h2>
+                    <p>Чому тисячі розробників обирають саме нашу платформу</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Різноманітні змагання</h3>
+                        <p>Від коротких задач до повноцінних хакатонів з різних галузей програмування та технологій.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Командна робота</h3>
+                        <p>Формуйте команди з розробників зі всього світу або приєднуйтесь до існуючих.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Рейтингова система</h3>
+                        <p>Змагайтесь за місця в глобальному рейтингу та отримуйте визнання спільноти.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>HackYourLife</h3>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Наша команда</a></li>
+                    <li><a href="#">Партнери</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Спільнота</h3>
+                <ul>
+                    <li><a href="#">Рейтинг</a></li>
+                    <li><a href="#">Форум</a></li>
+                    <li><a href="#">Успішні проєкти</a></li>
+                    <li><a href="#">Менторство</a></li>
+                    <li><a href="#">Вакансії</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Приєднуйтесь</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Контактна інфомарція</h3>
+                <ul>
+                    <li>Телефон</li>
+                    <li>+380980673457</li>
+                    <li>Пошта</li>
+                    <li>yura.seruizno@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HackYourLife. Усі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
