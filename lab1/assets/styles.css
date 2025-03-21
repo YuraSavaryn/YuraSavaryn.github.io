@@ -109,6 +109,7 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     color: black;
+    position: relative;
     background: url("https://www.hackerleague.org/wp-content/uploads/2019/08/Junction_2015.jpg");
     background-size: cover;
     background-position: center;
@@ -117,10 +118,10 @@ nav ul li a:hover {
 .hero::before {
     content: ""; 
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 68.5%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.75); 
 }
 
