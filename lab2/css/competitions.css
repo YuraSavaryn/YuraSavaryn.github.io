@@ -3,9 +3,11 @@
 }
 
 .hackathon-card {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -14,12 +16,53 @@
     transform: translateY(-5px);
 }
 
+.hackathon-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.hackathon-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    min-height: 2.6rem;
+}
+
+.hackathon-content p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.6;
+    min-height: 4.5rem;
+}
+
+.hackathon-meta {
+    margin-top: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.hackathon-meta span {
+    display: flex;
+    align-items: center;
+}
+
 .hackathon-img {
     height: 180px;
     background-color: #ccc;
     background-size: cover;
     background-position: center;
     position: relative;
+    border-radius: 10px 10px 0 0;
 }
 
 .img-1 {
@@ -47,35 +90,6 @@
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
-}
-
-.hackathon-content {
-    padding: 1.5rem;
-}
-
-.hackathon-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.hackathon-content p {
-    color: #666;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-}
-
-.hackathon-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-    font-size: 0.9rem;
-}
-
-.hackathon-meta span {
-    display: flex;
-    align-items: center;
 }
 
 .tag {
@@ -108,6 +122,25 @@
     text-align: center;
     margin-bottom: 3rem;
     color: #333;
+}
+
+.hackathon-btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.hackathon-btn button {
+    background-color: #f04e30;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hackathon-btn button:hover {
+    background-color: #c03d26;
 }
 
 .rules-container {

@@ -87,6 +87,19 @@ nav ul li a:hover {
     background-color: #c03d26;
 }
 
+#alert-btn {
+    background-color: #f04e30;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#alert-btn:hover {
+    background-color: #c03d26;
+}
+
 .btn-primary button {
     background-color: #f04e30;
     color: white;
