@@ -233,7 +233,6 @@
     margin-bottom: 0.5rem;
 }
 
-/* Медіа-запит для адаптивності на мобільних пристроях */
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;

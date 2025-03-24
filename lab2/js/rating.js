@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Масив з даними учасників
     const participants = [
         {
             position: 1,
@@ -113,15 +112,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
 
-    // Отримуємо tbody таблиці рейтингу
     const tableBody = document.querySelector('.rating-table tbody');
     
-    // Очистити попередній вміст таблиці перед додаванням нових даних
     tableBody.innerHTML = '';
     
-    // Використовуємо forEach для генерації рядків таблиці
     participants.forEach(participant => {
-        // Визначаємо клас для рядка в залежності від позиції
         let rowClass = '';
         if (participant.position === 1) {
             rowClass = 'first-place';
@@ -131,14 +126,12 @@ document.addEventListener('DOMContentLoaded', function() {
             rowClass = 'third-place';
         }
         
-        // Генеруємо HTML для кожного учасника
         const trendIcon = participant.trend.direction === 'up' 
             ? `<span class="trend-up">↑ ${participant.trend.value}</span>` 
             : participant.trend.direction === 'down' 
                 ? `<span class="trend-down">↓ ${participant.trend.value}</span>` 
                 : `<span class="trend-same">−</span>`;
         
-        // Створюємо HTML-код для рядка
         const rowHTML = `
             <tr class="${rowClass}">
                 <td class="position-col">${participant.position}</td>
@@ -163,7 +156,6 @@ document.addEventListener('DOMContentLoaded', function() {
             </tr>
         `;
         
-        // Додаємо рядок до таблиці
         tableBody.innerHTML += rowHTML;
     });
 });

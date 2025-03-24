@@ -166,7 +166,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem 2rem;
 }
 
 .footer-column h3 {
@@ -209,7 +209,6 @@ footer {
 
 .section-title h2 {
     font-size: 2.5rem;
-    color: dark; /* Синій колір заголовку як на фото */
     margin-bottom: 0.5rem;
 }
 
@@ -268,7 +267,6 @@ footer {
     }
 }
 
-/* Медіа-запит для мобільних пристроїв */
 @media (max-width: 768px) {
     header {
         flex-wrap: wrap;
@@ -292,12 +290,12 @@ footer {
     
     nav {
         flex-basis: 100%;
-        order: 4; /* Розташовуємо під логотипом і кнопкою */
-        display: none; /* Приховуємо за замовчуванням */
+        order: 4; 
+        display: none; 
     }
     
     nav.active {
-        display: block; /* Показуємо при активації */
+        display: block; 
         margin-top: 15px;
     }
     
@@ -317,7 +315,7 @@ footer {
     .auth {
         flex: 1;
         text-align: right;
-        order: 2; /* Розташовуємо справа від логотипу */
+        order: 2; 
     }
     
     .auth button {
@@ -325,7 +323,7 @@ footer {
         font-size: 0.8rem;
     }
     
-    /* Показуємо тільки одну кнопку на малих екранах */
+    
     .auth button:first-child {
         display: none;
     }
@@ -335,10 +333,9 @@ footer {
     }
 }
 
-/* Ще менші екрани */
 @media (max-width: 480px) {
     .main-logo a {
-        display: none; /* Приховуємо текст логотипу на дуже малих екранах */
+        display: none; 
     }
     
     .auth button {
