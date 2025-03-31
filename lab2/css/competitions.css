@@ -5,7 +5,7 @@
 .hackathon-card {
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 500px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -60,6 +60,7 @@
     height: 180px;
     background-color: #ccc;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     position: relative;
     border-radius: 10px 10px 0 0;
@@ -79,6 +80,14 @@
 
 .img-4 {
     background: url("https://img.freepik.com/premium-photo/ai-solutions-business-technology-generative-ai_145713-6737.jpg");
+}
+
+.img-5 {
+    background: url("https://media.licdn.com/dms/image/C4D12AQGYL0QQHYmmxA/article-cover_image-shrink_600_2000/0/1622214050531?e=2147483647&v=beta&t=S6ZhDf6-QsnyYuv8B8wCaSrL7tvWrcNeq6vgHfmyY6k");
+}
+
+.img-6 {
+    background: url("https://www.openbsd.org/images/hackathons/h2k24.png");
 }
 
 .hackathon-status {

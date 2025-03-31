@@ -215,6 +215,10 @@
     flex-shrink: 0;
 }
 
+.stat-content {
+    text-align: left;
+}
+
 .stat-content h4 {
     margin: 0 0 0.5rem;
     color: #333;
