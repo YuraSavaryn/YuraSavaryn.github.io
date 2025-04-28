@@ -1,0 +1,345 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page-header {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: black;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#alert-btn {
+  background-color: #f04e30;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#alert-btn:hover {
+  background-color: #c03d26;
+}
+
+.btn-primary {
+  background-color: #f04e30;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #c03d26;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #f04e30;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  border: 1px solid #f04e30;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(240, 78, 48, 0.1);
+}
+
+.platform {
+  background-color: white;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+  position: relative;
+  background: url("https://www.hackerleague.org/wp-content/uploads/2019/08/Junction_2015.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.platform::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); 
+}
+
+.platform-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+}
+
+.platform h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.platform p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+
+
+/* Стилі для секції історій успіху */
+.success-stories {
+  padding-bottom: 3rem;
+  background-color: white;
+}
+
+.stories-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.story-card {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.story-image {
+  flex: 0 0 150px;
+  margin-right: 2rem;
+}
+
+.story-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.story-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.story-author {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.story-text {
+  color: #444;
+  line-height: 1.6;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.slider-prev, .slider-next {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: all 0.3s;
+}
+
+.slider-prev:hover, .slider-next:hover {
+  background-color: #f04e30;
+  color: white;
+  border-color: #f04e30;
+}
+
+/* Стилі для секції партнерів */
+.partners-section {
+  padding: 5rem 0;
+  background-color: #f9f9f9;
+}
+
+.partners-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 0 5rem;
+  align-items: center;
+}
+
+.partner-logo img {
+  max-width: 80px;
+  max-height: 80px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.partner-logo img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.become-partner {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.become-partner p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  /* Адаптивність для нових секцій */
+  .story-card {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .story-image {
+      margin-right: 0;
+      margin-bottom: 1rem;
+  }
+
+  .story-image img {
+      width: 90%;
+  }
+  
+  .partners-grid {
+      gap: 2rem;
+      margin: 0 1rem;
+  }
+  
+  .section-title h2 {
+      font-size: 2rem;
+  }
+  
+  .platform h1 {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .platform {
+      height: 400px;
+  }
+  
+  .platform-content {
+      padding: 0 1rem;
+  }
+  
+  .platform p {
+      font-size: 1rem;
+  }
+  
+  .section-title h2 {
+      font-size: 1.8rem;
+  }
+  
+  .section-title p {
+      font-size: 1rem;
+  }
+  
+  .feature-card, .story-card {
+      padding: 1.5rem 1rem;
+  }
+  
+  .feature-card h3, .story-content h3 {
+      font-size: 1.2rem;
+  }
+  
+  .partner-logo img {
+      max-width: 120px;
+  }
+}
+
+/* Стилі для анімацій */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

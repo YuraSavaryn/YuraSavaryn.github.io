@@ -1,0 +1,152 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 30px;
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.main-logo {
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-logo img {
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    filter: brightness(1.5) contrast(1.2);
+}
+
+.main-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-logo a:hover {
+    color: #f04e30;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #f04e30;
+  }
+  
+  .auth button {
+    background-color: #f04e30;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .auth button:hover {
+    background-color: #c03d26;
+  }
+  
+  .auth button:first-child {
+    margin-right: 5px; 
+  }
+
+  @media (max-width: 950px) {
+    nav {
+        padding-right: 10px;
+    }
+  }
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .main-logo {
+        flex: 1;
+        font-size: 16px;
+    }
+
+    .main-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        order: 3;
+    }
+
+    nav {
+        flex-basis: 100%;
+        order: 4; 
+        display: none; 
+    }
+    
+    nav.active {
+        display: block; 
+        margin-top: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .auth {
+        flex: 1;
+        text-align: right;
+        order: 2; 
+    }
+    
+    .auth button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .auth button:first-child {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-logo a {
+        display: none;
+    }
+
+    .auth button {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+    }
+}
